@@ -1,8 +1,13 @@
 # Publish
 
+[![English](https://img.shields.io/badge/lang-English-0A66C2)](README.md)
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-BDBDBD)](README.ko.md)
+
 Company-wide binary distribution repository.
 
 This repository is a distribution hub for privately built products. It is not the canonical source of truth for engineering audit data, build history, or detailed QA records. Those remain in each product's source code repository.
+
+English is the default language for repository policy and canonical documentation. Human-facing guides should also provide a Korean companion document.
 
 ## What Belongs Here
 
@@ -26,6 +31,7 @@ This repository is a distribution hub for privately built products. It is not th
 products/
   <product-slug>/
     README.md
+    README.ko.md
     product.yaml
     docs/
     install/
@@ -35,6 +41,7 @@ products/
 ```
 
 - `README.md`: quick human-facing entrypoint for the product
+- `README.ko.md`: Korean companion for the product entrypoint
 - `product.yaml`: stable machine-readable metadata
 - `docs/`: lightweight product and distribution docs
 - `install/`: install helpers and wrapper scripts
@@ -49,4 +56,4 @@ products/
 - Treat release tags and attached assets as the only source of truth for released versions.
 - Keep this repository lightweight and easy to browse.
 
-Detailed rules live in [docs/REPO_POLICY.md](/Users/cypark/Documents/work/publish/docs/REPO_POLICY.md).
+Detailed rules live in [docs/REPO_POLICY.md](docs/REPO_POLICY.md).
