@@ -1,5 +1,8 @@
 # Repository Policy
 
+[![English](https://img.shields.io/badge/lang-English-0A66C2)](REPO_POLICY.md)
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-BDBDBD)](REPO_POLICY.ko.md)
+
 ## 1. Repository Role
 
 This repository is the company distribution hub for privately built binaries.
@@ -60,6 +63,7 @@ Each product folder should follow this shape:
 ```text
 products/<product-slug>/
   README.md
+  README.ko.md
   product.yaml
   docs/
   install/
@@ -71,6 +75,7 @@ products/<product-slug>/
 ### Required Files
 
 - `README.md`
+- `README.ko.md`
 - `product.yaml`
 
 ### Optional Directories
@@ -90,6 +95,9 @@ Only keep a directory if it has an actual role for that product. The template in
   - link to the source repository
   - link to the product releases page
   - explain the normal install path
+- `README.ko.md`
+  - provide the Korean companion for `README.md`
+  - stay aligned with the English entrypoint
 - `product.yaml`
   - store stable metadata used by humans or tooling
   - do not duplicate current version numbers from release assets
@@ -104,7 +112,32 @@ Only keep a directory if it has an actual role for that product. The template in
 - `agents/`
   - instructions for agents that need to install, upgrade, verify, or roll back the product
 
-## 5. Required Product Metadata
+## 5. Documentation Language Rules
+
+English is the default language for canonical repository documentation.
+
+Rules:
+
+- keep the primary file in English using the normal `.md` name
+- add a Korean companion file using the same base name with `.ko.md`
+- place language switch badges or equivalent links at the top of both files
+- if an English and Korean document disagree, the English document is the canonical source until both are reconciled
+- human-facing guides should be provided in both English and Korean
+
+Examples:
+
+- `README.md` and `README.ko.md`
+- `setup.md` and `setup.ko.md`
+- `migration-guide.md` and `migration-guide.ko.md`
+
+At minimum, provide both English and Korean for:
+
+- repository or product entrypoint READMEs
+- install and uninstall guides written for humans
+- rollout, operator, and migration guides
+- other human-facing guidance under `docs/` or `agents/`
+
+## 6. Required Product Metadata
 
 Each product should declare at least:
 
@@ -120,7 +153,7 @@ Keep this in `product.yaml` so humans and tooling can find it quickly.
 
 `distribution_status` is authoritative only for how this distribution hub should present the product. It does not replace the upstream product's support policy. If upstream support policy and this hub's distribution status differ, upstream support policy wins and the product README should explain the discrepancy.
 
-## 6. Release Rules
+## 7. Release Rules
 
 Actual binary payloads should mainly be published as release assets rather than committed directly into git.
 
@@ -211,7 +244,7 @@ Each published binary should satisfy all of the following:
 - release note points to install guidance
 - source reference can be traced back to the upstream product repository
 
-## 7. Deprecation, Deletion, And Distribution Status
+## 8. Deprecation, Deletion, And Distribution Status
 
 Each product should carry a simple `distribution_status` in `product.yaml`.
 
@@ -230,7 +263,7 @@ Rules:
 - do not silently delete a product folder if releases are still referenced elsewhere
 - if release assets are removed, leave an explicit tombstone note describing the removal and owner decision
 
-## 8. What Should Not Be Stored Here
+## 9. What Should Not Be Stored Here
 
 Avoid putting these into the repository tree:
 
@@ -242,11 +275,11 @@ Avoid putting these into the repository tree:
 
 If a file is only needed by a build pipeline, it probably belongs in the product repository, not here.
 
-## 9. Recommended Onboarding Flow For A New Product
+## 10. Recommended Onboarding Flow For A New Product
 
 1. Create `products/<product-slug>/`.
 2. Copy the structure from `products/_template/`.
-3. Fill in `README.md` and `product.yaml`.
+3. Fill in `README.md`, `README.ko.md`, and `product.yaml`.
 4. Add install or uninstall helpers only if the product needs them.
 5. Publish binaries as release assets using the product-scoped tag format.
 6. Link the releases page from the product README.

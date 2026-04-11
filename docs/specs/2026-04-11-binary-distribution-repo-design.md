@@ -1,5 +1,8 @@
 # Binary Distribution Repo Design
 
+[![English](https://img.shields.io/badge/lang-English-0A66C2)](2026-04-11-binary-distribution-repo-design.md)
+[![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-BDBDBD)](2026-04-11-binary-distribution-repo-design.ko.md)
+
 ## Goal
 
 Define a simple, company-wide structure for distributing privately built binaries without turning this repository into the canonical engineering audit system.
@@ -33,6 +36,7 @@ The repo should expose one stable folder per product under `products/`.
 Each product may contain:
 
 - `README.md`
+- `README.ko.md`
 - `product.yaml`
 - `docs/`
 - `install/`
