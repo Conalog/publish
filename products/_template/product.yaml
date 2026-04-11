@@ -1,0 +1,11 @@
+slug: example-product
+name: Example Product
+owners:
+  - team: example-team
+    contact: example-team@example.com
+source_repository: https://example.com/org/example-product
+releases_url: https://example.com/org/example-product/releases
+default_channel: stable
+distribution_status: active
+notes: >
+  Replace these values before onboarding a real product.
