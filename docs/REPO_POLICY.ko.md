@@ -135,7 +135,7 @@ products/<product-slug>/
 - 저장소 또는 제품 진입용 README
 - 사람이 읽는 설치/삭제 가이드
 - 롤아웃, 운영, 마이그레이션 가이드
-- `docs/` 또는 `agents/` 아래의 기타 human-facing 가이드
+- `docs/` 또는 `agents/` 아래의 기타 사람이 읽는 가이드
 
 ## 6. 필수 제품 메타데이터
 
