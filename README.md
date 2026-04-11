@@ -56,4 +56,4 @@ products/
 - Treat release tags and attached assets as the only source of truth for released versions.
 - Keep this repository lightweight and easy to browse.
 
-Detailed rules live in [docs/REPO_POLICY.md](/Users/cypark/Documents/work/publish/docs/REPO_POLICY.md).
+Detailed rules live in [docs/REPO_POLICY.md](docs/REPO_POLICY.md).

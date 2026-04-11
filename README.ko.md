@@ -54,4 +54,4 @@ products/
 - released version의 기준은 release tag와 그에 연결된 asset입니다.
 - 이 저장소 자체는 가볍고 탐색하기 쉽게 유지합니다.
 
-상세 규칙은 [docs/REPO_POLICY.md](/Users/cypark/Documents/work/publish/docs/REPO_POLICY.md)에 있습니다.
+상세 규칙은 [docs/REPO_POLICY.ko.md](docs/REPO_POLICY.ko.md)에 있습니다.
