@@ -1,0 +1,13 @@
+slug: rep
+name: REP Desktop Agent and Web SDK
+owners:
+  - team: rep
+    contact: https://github.com/Conalog/rep/issues
+source_repository: https://github.com/Conalog/rep
+releases_url: https://github.com/Conalog/publish/releases
+default_channel: stable
+distribution_status: active
+notes: >
+  Published release assets use product-scoped tags such as rep/vX.Y.Z.
+  Desktop agent archives use rep-agent_<version>_<os>_<arch> names.
+  Web SDK assets are platform-independent.
