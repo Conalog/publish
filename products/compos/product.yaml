@@ -1,0 +1,11 @@
+slug: compos
+name: Compos CLI
+owners:
+  - team: compos
+    contact: https://github.com/Conalog/compos/issues
+source_repository: https://github.com/Conalog/compos
+releases_url: https://github.com/Conalog/publish/releases
+default_channel: stable
+distribution_status: active
+notes: >
+  Published release assets use product-scoped tags such as compos/vX.Y.Z.
