@@ -1,0 +1,13 @@
+slug: rep-agent
+name: REP Desktop Agent
+owners:
+  - team: rep
+    contact: https://github.com/Conalog/rep/issues
+source_repository: https://github.com/Conalog/rep
+releases_url: https://github.com/Conalog/publish/releases
+default_channel: stable
+distribution_status: active
+notes: >
+  Published release assets use product-scoped tags such as rep-agent/vX.Y.Z.
+  Desktop agent archives use rep-agent_<version>_<os>_<arch> names.
+  windows_386 is retained for legacy 32-bit Windows compatibility.

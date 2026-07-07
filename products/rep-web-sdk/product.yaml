@@ -1,5 +1,5 @@
-slug: rep
-name: REP Distribution Overview
+slug: rep-web-sdk
+name: REP Web SDK
 owners:
   - team: rep
     contact: https://github.com/Conalog/rep/issues
@@ -8,5 +8,5 @@ releases_url: https://github.com/Conalog/publish/releases
 default_channel: stable
 distribution_status: active
 notes: >
-  Historical combined release assets used rep/vX.Y.Z.
-  New releases are split into rep-agent/vX.Y.Z and rep-web-sdk/vX.Y.Z.
+  Published release assets use product-scoped tags such as rep-web-sdk/vX.Y.Z.
+  Web SDK assets are platform-independent and therefore do not use OS or architecture tokens.

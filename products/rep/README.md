@@ -1,20 +1,22 @@
-# REP Desktop Agent and Web SDK
+# REP Distribution Overview
 
 [![English](https://img.shields.io/badge/lang-English-0A66C2)](README.md)
 [![한국어](https://img.shields.io/badge/lang-%ED%95%9C%EA%B5%AD%EC%96%B4-BDBDBD)](README.ko.md)
 
 Desktop loopback agent and browser-facing web SDK for REP integrations.
 
-Use this distribution entry to download released REP desktop agent binaries and web SDK packages built from the upstream source repository.
+REP distribution is split into component-scoped release products. Use the component entries below for new downloads.
 
 ## Links
 
 - Source repository: https://github.com/Conalog/rep
 - Releases page: https://github.com/Conalog/publish/releases
+- Desktop agent product: ../rep-agent/
+- Web SDK product: ../rep-web-sdk/
 
 ## Desktop Agent
 
-Download the latest `rep/vX.Y.Z` release asset for your platform:
+Download desktop agent binaries from `rep-agent/vX.Y.Z`:
 
 - `rep-agent_<version>_macos_arm64.tar.gz`
 - `rep-agent_<version>_macos_amd64.tar.gz`
@@ -25,14 +27,17 @@ Each archive extracts to `rep-agent/` and contains the executable as `rep-deskto
 
 ## Web SDK
 
-Download one of the platform-independent web SDK assets:
+Download platform-independent web SDK assets from `rep-web-sdk/vX.Y.Z`:
 
 - `rep-web-sdk_<version>_npm.tgz`: npm-installable package tarball
 - `rep-web-sdk_<version>_browser.tar.gz`: browser distribution bundle
 
 ## Verification
 
-Use `rep_<version>_SHA256SUMS.txt` from the same release to verify downloaded assets.
+Use the component checksum file from the same release:
+
+- `rep-agent_<version>_SHA256SUMS.txt`
+- `rep-web-sdk_<version>_SHA256SUMS.txt`
 
 ## Signing Status
 
@@ -40,4 +45,4 @@ Release assets are currently unsigned and not notarized. Follow the organization
 
 ## Notes
 
-Release assets are the source of truth for published versions. This product entry intentionally does not duplicate a latest version number.
+Release assets are the source of truth for published versions. The older combined `rep/vX.Y.Z` releases are retained as historical releases; new releases use `rep-agent/vX.Y.Z` and `rep-web-sdk/vX.Y.Z`.
