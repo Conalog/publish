@@ -1,0 +1,11 @@
+slug: repass-local-worker
+name: repass-local-worker
+owners:
+  - team: grant
+    contact: https://github.com/Conalog/grant/issues
+source_repository: https://github.com/Conalog/grant
+releases_url: https://github.com/Conalog/publish/releases
+default_channel: stable
+distribution_status: active
+notes: >
+  Published release assets use product-scoped tags such as repass-local-worker/vX.Y.Z.
